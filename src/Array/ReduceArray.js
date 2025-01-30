@@ -9,11 +9,15 @@
 // console.log(ReduceArrayOf([1, 2, 3, 4, 5, 4, 7])); // Output: 26
 
 
-// Using reduce function
+//Using reduce function
 
-// const ReduceArrayOf = (arr) => {
-// return arr.reduce((sum, num) => sum+num, 0)}
-// console.log(ReduceArrayOf([1, 2, 3, 4, 5, 4, 7]));
+const ReduceArrayOf = (arr) => {
+    return arr.reduce((sum, num) => {
+        return sum + num
+    }, 0)
+}
+
+console.log(ReduceArrayOf([1, 2, 3, 4, 5, 4, 7]));
 
 // Using map function
 const mapArray = (arr) =>{

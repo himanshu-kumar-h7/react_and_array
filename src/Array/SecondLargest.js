@@ -1,18 +1,18 @@
 const secondLargest =(arr) => {
-    let max= -Infinity, secondMax = -Infinity
+    let max = -Infinity, secondMax = -Infinity
     for(let i of arr){
-        if (i > max){
+        if(i > max){
             secondMax = max
-        max = i
+             max = i
+             
         }
-        else if (i > secondMax && i !== max) {
-                 i > -Infinity  && i !== -Infinity
-            secondMax = i;
-          }
-            
-        
+        else if(i > secondMax && i !== max){
+             secondMax = i
+        }
     }
 return secondMax
 }
 
-console.log(secondLargest([5,5,5,5,5,6,6]))
+let arr = [5,6,343333,4444,33333,33334,33333]
+let second = secondLargest(arr)
+console.log(second)
