@@ -16,4 +16,5 @@ let reverse = (arr) => {
     return arr
 }
 console.log(reverse(arr))
+// abc
 
