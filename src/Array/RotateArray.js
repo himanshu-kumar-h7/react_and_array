@@ -1,7 +1,7 @@
 const rotateArray =(arr, k) =>{
    k =k % arr.length; 
 
-   return[...arr.slice(-2),...arr.slice(0,-2)]
+   return[...arr.slice(-k),...arr.slice(0,-k)]
    
 }
 
