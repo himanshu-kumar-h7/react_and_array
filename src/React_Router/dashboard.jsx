@@ -8,10 +8,10 @@ function Dashboard() {
       <nav>
         <ul>
           <li>
-            <Link to="profile">Profile</Link>
+            <Link to="/profile">Profile</Link>
           </li>
           <li>
-            <Link to="settings">Settings</Link>
+            <Link to="/settings">Settings</Link>
           </li>
         </ul>
       </nav>
