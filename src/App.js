@@ -10,12 +10,17 @@ import ButtonClickCountUsingUseRef from './Exercise/ButtonClickCountUsingUseRef'
 import ButtonComponent from './ModalImplementation/ButtonComponent'
 import Credentials from './Login Page/Credentials';
 import Box from './Component/childrenProps';
+import Todo from '../src/Todo/TodoList'
+import TabbedComponent from './Component/TabbedComponent';
+import FetchPosts from './Test/FetchPosts'
+import MyComponent from './Test/MyComponent';
+
 
 
 function App() {
   return (
     <div className="App">
-      <Counter/>
+      {/* <Counter/> */}
 
       {/* <CurrencyConverter/> */}
 
@@ -37,7 +42,10 @@ function App() {
       <h1>Hello, World!</h1>
       <p>This is some content inside the Box component.</p>
     </Box> */}
-
+{/* <Todo/> */}
+{/* <TabbedComponent/> */}
+{/* <FetchPosts/> */}
+<MyComponent/>
     
     </div>
   );
