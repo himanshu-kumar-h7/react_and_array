@@ -8,5 +8,5 @@ const rotateArray =(arr, k) =>{
 
 
 
-const newAray = rotateArray([1,2,3,4,5],6)
+const newAray = rotateArray([1,2,3,4,5],7)
 console.log(newAray)

@@ -1,15 +1,33 @@
-const PairOfAGivenSum =(original, arr) => {
-    let set = new Set()
-    const pair = []
+// const PairOfAGivenSum =(sum, arr) => {
+//     let set = new Set(arr)
     
-    for (let i of arr){
-        let diff = original - i
+//     const pair = []
+    
+    
+//     for (let i of arr){
+//         let diff = sum - i
+//         if(set.has(diff)){
+//            pair.push([diff, i])
+//         }
+//         set.add(i)
+//     }
+// return pair
+// }
+
+
+
+const desired = (sum, arr) => {
+     const set = new Set()
+     const pair = []
+
+     for(let i of arr){
+        let diff = sum - i
         if(set.has(diff)){
-           pair.push([diff, i])
+            pair.push([i, diff])
         }
         set.add(i)
-    }
-return pair
+     }
+     return pair
 }
 
-console.log(PairOfAGivenSum[1,2,3,4,5],5)
+console.log(desired(5,[1,2,3,4,5]))

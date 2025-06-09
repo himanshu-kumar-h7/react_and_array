@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import Counter from './Component/Counter';
 import CurrencyConverter from './Component/CurrencyConverter';
 import Stopwatch from './Component/Stopwatch';
@@ -14,12 +14,26 @@ import Todo from '../src/Todo/TodoList'
 import TabbedComponent from './Component/TabbedComponent';
 import FetchPosts from './Test/FetchPosts'
 import MyComponent from './Test/MyComponent';
+import Child from './Infosys/child';
 
 
 
 function App() {
+
+const[age, setAge] = useState("Loading...")
+
+  const obj = useMemo(() => ({
+    name: "himanshu",
+    age: 25
+  }),[])
+ console.log("hello")
+  
+
   return (
     <div className="App">
+      
+      <Child value ={obj} setter= {setAge}/>
+      <p>Current Age for person is {age} </p>
       {/* <Counter/> */}
 
       {/* <CurrencyConverter/> */}
@@ -45,7 +59,7 @@ function App() {
 {/* <Todo/> */}
 {/* <TabbedComponent/> */}
 {/* <FetchPosts/> */}
-<MyComponent/>
+{/* <MyComponent/> */}
     
     </div>
   );
