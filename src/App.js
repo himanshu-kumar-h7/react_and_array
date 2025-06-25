@@ -15,25 +15,28 @@ import TabbedComponent from './Component/TabbedComponent';
 import FetchPosts from './Test/FetchPosts'
 import MyComponent from './Test/MyComponent';
 import Child from './Infosys/child';
-
+import CounterReducer from './USeReducerCounter/CounterUseReducer';
+import View from './Redux/View';
+import store from './Redux/Store';
+import { Provider } from 'react-redux';
 
 
 function App() {
 
-const[age, setAge] = useState("Loading...")
-
-  const obj = useMemo(() => ({
-    name: "himanshu",
-    age: 25
-  }),[])
- console.log("hello")
+// const[age, setAge] = useState("Loading...")
+//   const obj = useMemo(() => ({
+//     name: "himanshu",
+//     age: 25
+//   }),[])
+//  console.log("hello")
   
 
   return (
     <div className="App">
       
-      <Child value ={obj} setter= {setAge}/>
-      <p>Current Age for person is {age} </p>
+      {/* <Child value ={obj} setter= {setAge}/>
+      <p>Current Age for person is {age} </p> */}
+
       {/* <Counter/> */}
 
       {/* <CurrencyConverter/> */}
@@ -55,11 +58,22 @@ const[age, setAge] = useState("Loading...")
       {/* <Box>
       <h1>Hello, World!</h1>
       <p>This is some content inside the Box component.</p>
-    </Box> */}
-{/* <Todo/> */}
-{/* <TabbedComponent/> */}
-{/* <FetchPosts/> */}
-{/* <MyComponent/> */}
+     </Box> */}
+
+      {/* <Todo/> */}
+
+      {/* <TabbedComponent/> */}
+
+      {/* <FetchPosts/> */}
+
+      {/* <MyComponent/> */}
+
+      {/* <CounterReducer /> */}
+
+      <Provider store={store}>
+      <View />
+    </Provider>
+      
     
     </div>
   );
