@@ -11,3 +11,5 @@ const Memoize = React.memo(({name,aadhar}) => {
 })
 
 export default Memoize;
+
+

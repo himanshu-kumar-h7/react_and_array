@@ -32,3 +32,4 @@ function PowerOf2(n){
     }
 }
 console.log(PowerOf2(32))
+

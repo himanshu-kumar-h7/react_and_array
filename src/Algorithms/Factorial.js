@@ -20,3 +20,12 @@ function factorial(n){
 
 }
 console.log(factorial(4))
+
+5 * 4 * 3 * 2 * 1
+
+function fact(n){
+    if(n < 1) return
+
+   return n * fact(n - 1)
+
+}

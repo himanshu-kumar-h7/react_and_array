@@ -19,6 +19,8 @@ import CounterReducer from './USeReducerCounter/CounterUseReducer';
 import View from './Redux/View';
 import store from './Redux/Store';
 import { Provider } from 'react-redux';
+//import Test1 from './Algorithms/test';
+import Test from './ALL/CounterWithincreaseDecrease';
 
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
 
   return (
     <div className="App">
+      
+      {/* <Test1/> */}
       
       {/* <Child value ={obj} setter= {setAge}/>
       <p>Current Age for person is {age} </p> */}
@@ -68,12 +72,13 @@ function App() {
 
       {/* <MyComponent/> */}
 
-      {/* <CounterReducer /> */}
+      <CounterReducer />
 
-      <Provider store={store}>
+      {/* <Provider store={store}>
       <View />
-    </Provider>
-      
+    </Provider> */}
+
+    {/* <Test/> */}
     
     </div>
   );
